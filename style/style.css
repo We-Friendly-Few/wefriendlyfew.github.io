@@ -1,0 +1,34 @@
+:root {
+    /* global */
+    --transitionTime: 0.2s;
+    --colorWhite: #fff;
+    --colorBlack: #000;
+    --colorNavy: #232939;
+    --colorHighlightBg: #FF69B4;
+    --colorHighlightBgFaded: #ff1d8e8e;
+    --colorHighlightBgFadedMore: #ff4ba575;
+    /* light */
+    --colorBg: #f9f9f9;
+    --colorFg: #6c7181;
+    --colorFgFaded: #777c8b;
+    --colorFgFadedMore: #aeb0b8;
+    --colorFgFadedMost: #aeb0b894;
+    /* dark */
+    --colorBgDark: #333335;
+    --colorFgDark: #d1d1d1;
+    --colorFgDarkFaded: #e3e3e363;
+    --colorFgDarkFadedMore: #9d9d9d66;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+a,li,.container,.card-overlay,.palettePopup,label {
+    transition-duration: var(--transitionTime);
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16pt;
+    color: var(--colorFg);
+    background: var(--colorWhite);
+}
