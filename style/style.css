@@ -46,14 +46,14 @@ p {margin: 1em auto;}
     color: var(--colorFg);
     /* background: var(--colorBg); */
 }
-.card#groupbio,.card#links {
+.card#groupbio,.card#bio,.card#links {
     font-size: 18pt;
     color: var(--colorFg);
     background-color: var(--colorWhite);
     margin: 1em;
     padding: 1.5em;
 }
-.card#groupbio {max-width: 40em;}
+.card#groupbio,.card#bio {max-width: 40em;}
 .card#links {
     min-width: 16em;
     max-width: 16em;
@@ -84,5 +84,19 @@ p {margin: 1em auto;}
 .card h1 {
     font-size: 30pt;
     margin-bottom: 0.5em;
+}
+.card h1#left {
+    padding: 10px 10px;
+    background: linear-gradient(90deg, transparent 0, var(--colorFg) 0, var(--colorFg) 35%, transparent 60%);
+    background-size: 100% 5px;
+    background-position: 0% 85%;
+    background-repeat: no-repeat;
+}
+.card h1#center {
+    padding: 10px 10px -3px;
+    background: linear-gradient(90deg, transparent 20%, var(--colorFg) 20%, var(--colorFg) 80%, transparent 80%);
+    background-size: 100% 5px;
+    background-position: 0% 85%;
+    background-repeat: no-repeat;
 }
 #end {clear: both;}
